@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>3D</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style3.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Osler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!---
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	-->
+	
+
+</head>
+
+<body data-spy="scroll" data-target="navbarResponsive">
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#connect"><img src="img/LOGO1.png" width="105" height="35"
+					alt="Computer Hope"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Team</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#connect">Connect</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="socialMedia">
+		<div class="bg"></div>
+		<ul class="sci">
+			<li data-color="#1877F2" data-text="Facebook"><a href="https://www.instagram.com/osler_ai/" class="facebook"><i class="fa fa-facebook"
+						aria-hidden="true"></i></a></li>
+			<li data-color="#25D366" data-text="Whatsapp"><a href="https://www.instagram.com/osler_ai/" class="whatsapp"><i class="fa fa-whatsapp"
+						aria-hidden="true"></i></a></li>
+			<li data-color="#ff0000" data-text="Youtube"><a href="https://www.youtube.com/channel/UC5dDpGJJb0xkUVb59vQNzJA" class="youtube"><i class="fa fa-youtube"
+						aria-hidden="true"></i></a></li>
+			<li data-color="#0099FF" data-text="Twitter"><a href="https://www.instagram.com/osler_ai/" class="twitter"><i class="fa fa-twitter"
+						aria-hidden="true"></i></a></li>
+			<li data-color="#E4405F" data-text="Instagram"><a href="https://www.instagram.com/osler_ai/" class="instagram"><i class="fa fa-instagram"
+						aria-hidden="true"></i></a></li>
+		</ul>
+	</section>
+	<script src="vanilla-tilt.js"></script>
+	<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+			max: 30,
+			speed: 400,
+			glare: true,
+			"max-glare": 1,
+		});
+
+
+		let list = document.querySelectorAll('.sci li');
+		let bg = document.querySelector('.bg');
+		list.forEach(elements => {
+			elements.addEventListener("mouseenter", function (event) {
+				let color = event.target.getAttribute('data-color');
+				bg.style.backgroundColor = color;
+			})
+			elements.addEventListener("mouseleave", function (event) {
+				bg.style.backgroundColor = '#fff';
+			})
+		})
+	</script>
+</body>
+
+</html>
