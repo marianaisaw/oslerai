@@ -41,7 +41,7 @@ body
 {
   position: relative;
   min-width: 310px;
-  height: 550px;
+  height: 500px;
   box-shadow: inset 10px 10px 10px rgba(0,0,0,0.03),
               inset -10px -10px 15px rgba(255,255,255,0.5),
               10px 10px 10px rgba(0,0,0,0.03),
