@@ -40,7 +40,7 @@ body
 .container .card
 {
   position: relative;
-  min-width: 310px;
+  min-width: 300px;
   height: 550px;
   box-shadow: inset 10px 10px 10px rgba(0,0,0,0.03),
               inset -10px -10px 15px rgba(255,255,255,0.5),
