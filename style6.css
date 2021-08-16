@@ -25,7 +25,6 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  flex-wrap: wrap;
   background: #ebf5fc;
   padding: 100px 0 50px;
 }
